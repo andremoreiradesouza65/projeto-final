@@ -3,21 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 /* Estilos gerais */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #ffffff; /* Fundo preto */
-  color: #f5f5f5; /* Texto claro */
-  line-height: 1.6;
-  padding-top: 50px;
+  background-color: #ffffff;
+  color: #f5f5f5;
+  line-height: 1.5;
+  padding-top: 2px;
   transition: background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Barra de navegação */
 header {
-  background: linear-gradient(135deg, #1a2a44, #273b5d); /* Azul escuro metálico suave */
+  background: linear-gradient(135deg, #1a2a44, #273b5d);
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -25,25 +29,24 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9;
   box-shadow: 0 4px 10px rgb(255, 255, 255);
   transition: background 0.3s ease;
-  display: flex;
+  display: flex = 1;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
+  align-items: left;
+  flex-wrap: wrap;
 }
 
 /* Logo do Cabeçalho */
 header .logo {
   font-size: 2.5em;
-  font-weight: 700;
-  color: #ffffff; /* Cor dourada metálica */
+  font-weight: 400;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-  flex: 1; /* Flex para a logo */
+  flex: 1;
+  text-align: center;
 }
 
 /* Barra de navegação */
@@ -62,8 +65,8 @@ header .logo:hover {
 .tabs {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  flex-wrap: wrap; /* Para permitir que as abas se ajustem ao tamanho da tela */
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 /* Estilo das abas */
@@ -79,6 +82,9 @@ header .logo:hover {
   border-radius: 10px;
   font-weight: 500;
   transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hover nas abas */
@@ -89,7 +95,7 @@ header .logo:hover {
 
 /* Aba ativa */
 .tablinks.active {
-  background: #e67e22; /* Cor ativa mais vibrante */
+  background: #000000; /* Cor ativa mais vibrante */
   color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
